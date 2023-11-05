@@ -1,0 +1,238 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* ... Your existing CSS ... */
+
+/* Hero section styles */
+.hero {
+     
+    
+    color: #060606;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Service containers */
+  .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual service container */
+  .service {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Circular image in each service container */
+  .circle-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Centering text in the service container */
+  .service p {
+    text-align: left;
+  }
+  
+  /* Contact Us page styles */
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+  }
+  
+  .contact-form form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+/* About Us page styles */
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .about-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-info p {
+    font-size: 18px;
+    flex: 1;
+    max-width: calc(50% - 20px); /* 50% width with spacing between columns */
+    padding: 20px;
+    background-color: #fff; /* Background color for the container */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+  }
+  
+  /* Ensure the text wraps properly on smaller screens */
+  @media (max-width: 768px) {
+    .about-info p {
+      max-width: 100%;
+    }
+  }
+  
+
+/* Image slider styles */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+  
+  .scrolling-images {
+    display: flex;
+    animation: scrollImages 20s linear infinite;
+  }
+  
+  .scrolling-images img {
+    max-width: 20%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  @keyframes scrollImages {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    80% {
+      transform: translateX(-200%);
+    }
+    90% {
+      transform: translateX(-300%);
+    }
+  }
+    
